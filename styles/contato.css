@@ -1,0 +1,30 @@
+
+h1 {
+    font-size: 50px;
+}
+
+.titulo {
+    margin-top: 140px;
+}
+
+section {
+    margin-top: 32px;
+}
+
+section p {
+    font-size: 25px;
+}
+
+footer {
+    position: fixed;
+    right: 40%;
+    bottom: 40px;
+}
+
+footer a {
+    margin: 0 16px 0 16px;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}

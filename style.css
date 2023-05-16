@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    padding: 0 120px 0 120px;
+    background-color: #EAEAEA;
+
+    &.dark-mode {
+        background-color: #797979;
+        color: #EAEAEA;
+    }
+}
+
+button {
+   border: 0;
+   cursor: pointer;
+   font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+
+    .dark-mode & {
+        color: #EAEAEA;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.toggleClaro {
+    background-image: url(./assets/imgs/BsToggleOfftoggleoff.png);
+    height: 50px;
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 32px;
+}
+
+.navbar ul li a {
+    font-size: 25px;
+}
+
+.navbar ul li a:hover {
+    transition: all 0.2s;
+    color: #767676;
+
+    .dark-mode & {
+        color: #111;
+    }
+}
+
+body {
+    transition: background 0.2s linear;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: transparent;
+    border: solid 2px #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 45px;
+    transform: scale(1.5);
+
+    .dark-mode & {
+        border: solid 2px #EAEAEA;
+    }
+}
+
+.label img {
+    width: 14px;
+    height: 14px;
+}
+
+.label .ball {
+    background-color: #111;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 18px;
+    width: 18px;
+
+    transform: translateX(0);
+    transition: transform 0.2s linear;
+
+    .dark-mode & {
+        background-color: #EAEAEA;
+    }
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(19px);
+}

@@ -1,0 +1,82 @@
+h1 {
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo {
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 470px;
+    height: 170px;
+    background-color: #f2f2f2;
+    margin-bottom: 32px;
+    border-radius: 10px;
+
+    .dark-mode & {
+        background-color: #828282;
+    }
+}
+
+.card h2, aside, p, i {
+    margin: 8px 0 0 8px;
+}
+
+.card h2 {
+    font-size: 25px;
+}
+
+.card aside, p, i {
+    font-size: 18px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.botao button  {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: 200px;
+    height: 30px;
+    border: solid 1px #797979;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #111;
+    font-weight: 300;
+
+    .dark-mode & {
+        background-color: transparent;
+        border: solid 1px #EAEAEA;
+        color: #EAEAEA;
+    }
+}
+
+.botao button:hover {
+    background-color: transparent;
+    background-color: #797979;
+    color: #EAEAEA;
+    transition: all 0.5s;
+
+    .dark-mode &{
+        background-color: #EAEAEA;
+        color: #111;
+    }
+}
